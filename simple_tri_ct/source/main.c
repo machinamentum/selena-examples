@@ -37,7 +37,7 @@ static void sceneInit(void)
 	C3D_BindProgram(&program);
 
 	// Get the location of the uniforms
-	uLoc_projection = shaderInstanceGetUniformLocation(program.vertexShader, "gl_ModelViewProjectionMatrix");
+	uLoc_projection = shaderInstanceGetUniformLocation(program.vertexShader, "Projection");
 
 	// Configure attributes for use with the vertex shader
 	C3D_AttrInfo* attrInfo = C3D_GetAttrInfo();
